@@ -1,6 +1,6 @@
 # Aplicação Flask
 
-## Passos para configurar o banco de dados a ser implementado
+## Passos para configurar o banco de dados - A ser implementado essa funcionalidade
 
 Vá até o arquivo ```app.py``` e altere a seguinte linha:
 

@@ -8,13 +8,59 @@
 
         <title>Display</title>
 
+        <style>
+            body {
+                display: flex;
+                margin: 0;
+            }
+        
+            #sidebar {
+                width: 200px;
+                background-color: #f2f2f2;
+                height: 100vh;
+            }
+        
+            #content {
+                flex-grow: 1;
+                padding: 20px;
+            }
+        
+            ul {
+                list-style-type: none;
+                margin: 1.4em;
+                padding: 0;
+            }
+        
+            li {
+                margin-bottom: 10px;
+            }
+        
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+        
+            .active {
+                font-weight: bold;
+            }
+        </style>
+
     </head>
 
     <body>
 
-        <header></header>
+        <header>sarve</header>
 
         <!--Página a ser carregada!-->
+
+        <div id="sidebar">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">Quem Somos</a></li>
+                <li><a href="{{ url_for('bate_papo') }}">Bate-Papo tecnológico</a></li>
+            </ul>
+        </div>
+
         <div>
             {% block content %}
             {% endblock %}

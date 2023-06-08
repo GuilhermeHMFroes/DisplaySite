@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- main.html = index -->
+
 <html lang="pt-br">
 
     <head>
@@ -8,17 +10,61 @@
 
         <title>Display</title>
 
+        <link rel="stylesheet" href="../static/css/main.css" >
+
     </head>
 
     <body>
 
-        <header></header>
-
-        <!--Página a ser carregada!-->
-        <div>
-            {% block content %}
-            {% endblock %}
+        
+        <!-- Menu/Sidebar -->
+        <div id="sidebar">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">Quem Somos</a></li>
+                <li><a href="{{ url_for('bate_papo') }}">Bate-Papo tecnológico</a></li>
+            </ul>
         </div>
+        
+        <div>
+            <header>conteúdo fixo da home/header</header>
+
+            {% block content %}
+                <!--Página a ser carregada!-->
+            {% endblock %}
+
+            <footer> <h1>footer</h1> </footer>
+        </div>
+        <script>
+            // Código JavaScript para carregar o conteúdo das páginas de forma assíncrona
+            function loadContent(url) {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var response = xhr.responseText;
+                        document.getElementById('content').innerHTML = response;
+                    }
+                };
+                xhr.open('GET', url, true);
+                xhr.send();
+            }
+    
+            // Manipuladores de eventos de clique para os links do menu
+            document.getElementById('home-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                loadContent("{{ url_for('index') }}");
+            });
+            document.getElementById('about-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                loadContent("{{ url_for('about') }}");
+            });
+            document.getElementById('chat-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                loadContent("{{ url_for('bate_papo') }}");
+            });
+        </script>
+    
+
 
     </body>
 

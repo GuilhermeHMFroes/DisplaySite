@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    height: 100vh;
+}
+
+#content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1.4em;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-size: 15px;
+    text-color: #FFF
+}
+.active {
+    font-weight: bold;
+}

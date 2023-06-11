@@ -30,7 +30,7 @@ body {
 #sidebar {
   display: flex;
   flex-direction: column; /* Display the sections vertically */
-  width: 100vw;
+  width: 100%;
   background-color: #3f3f3f;
   color: #00879A;
 }
@@ -79,9 +79,9 @@ li:hover {
 footer {
   color: #fff;
   background-color: #6f6f6f;
-  font-size: 24px;
-  padding: 10px;
-  padding-top: 0px;
+  margin-top: 10px;
   text-align: center;
-  width: 100vw;
+  width: 100%;
+  height: 3em;
+  border-radius: 10px 10px 0 0;
 }

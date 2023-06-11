@@ -2,73 +2,29 @@
 
 {% block content %}
 
-
-
-<script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
-<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/lazyload.min.js"></script>
-<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
-<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/keyboardControl.min.js"></script>
-
-    <h1>C A R R O S S E L </h1>
-    <div class="swiper-container" id="example">
-        <div class="swiper-wrapper">
-          <!-- Slides - ordenar por índice do conteúdo recebido no app.py -->
-          <div class="a swiper-slide">1</div>
-          <div class="b swiper-slide">2</div>
-          <div class="c swiper-slide">3</div>
-          <div class="d swiper-slide">4</div>
-          <div class="e swiper-slide">5</div>
-        </div>
-    </div>
-
 <script>
-    var mySwiper = new Swiper('#example', {
-    pagination: {
-      el: ".swiper-plugin-pagination",
-      clickable: true,
-      bulletClass: 't-ScrollBar__item',
-      bulletActiveClass: 'is-active'
-    },
-    plugin: [ SwiperPluginPagination ]
-})
-
-console.log('chegou aqui')
-
-Swiper.use([SwiperPluginLazyload]);
-var mySwiper = new Swiper('#example', {
-    lazyload: {
-      loadPrevNext: false,
-      loadPrevNextAmount: 1,
-      loadOnTransitionStart: false,
-      elementClass: 'swiper-lazy',
-      loadingClass: 'swiper-lazy-loading',
-      loadedClass: 'swiper-lazy-loaded',
-      preloaderClass: 'swiper-lazy-preloader'
-    },
-    plugins: [SwiperPluginLazyload]
-})
-
-Swiper.use([SwiperPluginLazyload]);
-var mySwiper = new Swiper('#example', {
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true
-    },
-    plugins: [SwiperPluginKeyboardControl]
-});
+    document.getElementById('home').style.backgroundColor = '#009A60'
 </script>
+
+<h1>C A R R O S S E L </h1>
+
+<!-- ordenar por índice do conteúdo recebido no app.py -->
+
+
+
+
 
 <!-- FIM DO CARROSSEL / INÍCIO DO CAMPO DE TEXTO  -->
 
 <section id="projetos-texto">
     <h1>CAMPO DE TEXTO</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Perferendis modi illum aspernatur tempora distinctio ratione nisi amet 
-        error explicabo aliquid. Harum molestiae eos ad? Saepe dolores 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Perferendis modi illum aspernatur tempora distinctio ratione nisi amet
+        error explicabo aliquid. Harum molestiae eos ad? Saepe dolores
         recusandae corporis quisquam pariatur.</p>
 </section>
 
-<div id="batepapo-carousel">
+<div id="batepapo-iframes">
 
     <h1>B A T E - P A P O / iframes</h1>
 
@@ -79,10 +35,10 @@ var mySwiper = new Swiper('#example', {
 <section id="batepapo-texto">
 
     <h1>SOBRE O BATE-PAPO TECNO</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Esse eos, minus deserunt ratione mollitia perferendis 
-        alias quia eveniet dolorem magnam labore distinctio animi 
-        asperiores cum soluta eligendi rerum modi impedit!</p> 
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Esse eos, minus deserunt ratione mollitia perferendis
+        alias quia eveniet dolorem magnam labore distinctio animi
+        asperiores cum soluta eligendi rerum modi impedit!</p>
 </section>
 
 <style>

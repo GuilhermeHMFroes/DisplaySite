@@ -19,16 +19,24 @@
     <div id="sidebar">
         <div id="sidebar-upper">
             <img src="/static/images/icons/336383101_1234770020766857_5226797454627984334_n.jpg" alt="Home"
-                height="48px" width="48px">
-            <p>DISPLAY LAB</p>
+                height="48px" width="48px" style="padding: 1.4em;">
+            <p style="font-size: 24px;">DISPLAY LAB</p>
         </div>
         <div id="sidebar-lower">
             <ul id="routes">
 
-                <a href="{{ url_for('home') }}"><li id="home">HOME</li></a>
-                <a href="{{url_for('projetos')}}"><li id="projetos"> PROJETOS</li></a>
-                <a href="{{ url_for('bate_papo') }}"><li id="chat">BATE PAPO</li></a>
-                <a href="{{ url_for('sobre') }}"><li id="sobre">QUEM SOMOS</li></a>
+                <a href="{{ url_for('home') }}">
+                    <li id="home">HOME</li>
+                </a>
+                <a href="{{url_for('projetos')}}">
+                    <li id="projetos"> PROJETOS</li>
+                </a>
+                <a href="{{ url_for('bate_papo') }}">
+                    <li id="chat">BATE PAPO</li>
+                </a>
+                <a href="{{ url_for('sobre') }}">
+                    <li id="sobre">QUEM SOMOS</li>
+                </a>
 
             </ul>
         </div>
@@ -48,11 +56,6 @@
     <footer>
         <h4>@ DISPLAY LAB - 2023</h4>
     </footer>
-
-    <script>
-            
-    </script>
-
 
 </body>
 

@@ -1,0 +1,11 @@
+{
+  "name": "displaysite",
+  "version": "1.0.0",
+  "description": "## Passos para configurar o banco de dados - A ser implementado essa funcionalidade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

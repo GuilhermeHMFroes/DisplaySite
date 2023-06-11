@@ -1,0 +1,36 @@
+Esboço do bloco Projetos com o parâmetro project
+
+{% extends "main.html" %}
+
+{% block content %}
+
+    {% for project in projects %}
+        <div class="project-container">
+
+            <img src="{{ project.image }}" alt="Capa do Projeto" width="600" height="800">
+            <h1>{{ project.title }}</h1>
+            <p>{{ project.summary }}</p>
+
+            <a href="#" class="saiba-mais">Saiba mais</a>
+
+            <section class="project-details" style="display: none;">
+                <h1>Sobre o projeto</h1>
+                <p>{{ project.details }}</p>
+            </section>
+
+        </div>
+    {% endfor %}
+
+    <script>
+        var saibaMaisLinks = document.querySelectorAll('.saiba-mais');
+        saibaMaisLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var projectDetails = link.nextElementSibling;
+                projectDetails.style.display = 'block';
+                link.style.display = 'none';
+            });
+        });
+    </script>
+
+{% endblock %}

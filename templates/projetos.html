@@ -1,0 +1,44 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+<script>
+    document.getElementById('projetos').style.backgroundColor = '#009A60'
+</script>
+
+<!-- Para cada Projeto: -->
+
+
+<img src="" alt="Capa do Projeto" width="600" height="800"> <!-- link da imagem, nome do projeto -->
+<h1>Título do projeto</h1>
+
+<p>Resumo sobre o Projeto</p>
+
+<div class="botao">
+    <a href="#" id="saiba-mais">Saiba mais</a>
+</div>
+
+<section id="project-details" style="display: none;">
+    <h1>Sobre o projeto</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Facere cupiditate sequi commodi reiciendis
+        vitae voluptatem suscipit illo veritatis dicta,
+        quaerat ipsum possimus officia repellendus deserunt
+        pariatur. Voluptas eos et aut!
+    </p>
+</section>
+
+<script>
+    let a = document.getElementById('saiba-mais')
+    a.addEventListener('click', function (event) {
+        event.preventDefault();
+        var projectDetails = document.getElementById('project-details');
+        projectDetails.style.display = 'block';
+        a.style.display = 'none'
+    });
+</script>
+
+
+
+{% endblock %}

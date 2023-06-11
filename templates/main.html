@@ -4,68 +4,59 @@
 
 <html lang="pt-br">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-        <title>Display</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>Display</title>
 
-        <link rel="stylesheet" href="../static/css/main.css" >
+</head>
 
-    </head>
+<body>
 
-    <body>
+    <!-- Menu/Sidebar -->
+    <div id="sidebar">
+        <div id="sidebar-upper">
+            <img src="/static/images/icons/336383101_1234770020766857_5226797454627984334_n.jpg" alt="Home"
+                height="48px" width="48px" style="padding: 1.4em;">
+            <p style="font-size: 24px;">DISPLAY LAB</p>
+        </div>
+        <div id="sidebar-lower">
+            <ul id="routes">
 
-        
-        <!-- Menu/Sidebar -->
-        <div id="sidebar">
-            <ul>
-                <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="{{ url_for('about') }}">Quem Somos</a></li>
-                <li><a href="{{ url_for('bate_papo') }}">Bate-Papo tecnológico</a></li>
+                <a href="{{ url_for('home') }}">
+                    <li id="home">HOME</li>
+                </a>
+                <a href="{{url_for('projetos')}}">
+                    <li id="projetos"> PROJETOS</li>
+                </a>
+                <a href="{{ url_for('bate_papo') }}">
+                    <li id="chat">BATE PAPO</li>
+                </a>
+                <a href="{{ url_for('sobre') }}">
+                    <li id="sobre">QUEM SOMOS</li>
+                </a>
+
             </ul>
         </div>
-        
-        <div>
-            <header>conteúdo fixo da home/header</header>
 
-            {% block content %}
-                <!--Página a ser carregada!-->
-            {% endblock %}
+    </div>
 
-            <footer> <h1>footer</h1> </footer>
-        </div>
-        <script>
-            // Código JavaScript para carregar o conteúdo das páginas de forma assíncrona
-            function loadContent(url) {
-                var xhr = new XMLHttpRequest();
-                xhr.onreadystatechange = function() {
-                    if (xhr.readyState === 4 && xhr.status === 200) {
-                        var response = xhr.responseText;
-                        document.getElementById('content').innerHTML = response;
-                    }
-                };
-                xhr.open('GET', url, true);
-                xhr.send();
-            }
-    
-            // Manipuladores de eventos de clique para os links do menu
-            document.getElementById('home-link').addEventListener('click', function(event) {
-                event.preventDefault();
-                loadContent("{{ url_for('index') }}");
-            });
-            document.getElementById('about-link').addEventListener('click', function(event) {
-                event.preventDefault();
-                loadContent("{{ url_for('about') }}");
-            });
-            document.getElementById('chat-link').addEventListener('click', function(event) {
-                event.preventDefault();
-                loadContent("{{ url_for('bate_papo') }}");
-            });
-        </script>
-    
+    <div id="container">
+
+        {% block content %}
+        <!--Página a ser carregada!-->
+        {% endblock %}
+
+    </div>
 
 
-    </body>
+
+    <footer>
+        <h4>@ DISPLAY LAB - 2023</h4>
+    </footer>
+
+</body>
 
 </html>

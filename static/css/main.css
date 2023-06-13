@@ -5,27 +5,7 @@ Cores:
 verde: #009A60
 */
 
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-}
-
-#container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
-  background-color: #6f6f6f;
-  width: 85vw;
-  margin: 20px auto;
-  border-radius: 5px;
-  border-bottom: 2px solid #009A60;
-  color: #fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 #sidebar {
   display: flex;
@@ -54,6 +34,37 @@ body {
   border-bottom: 5px solid #009A60;
 }
 
+.container {
+
+    background-color: #474747;
+    color: #fff;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 85vw;
+    margin: 20px auto;
+
+    border-radius: 5px;
+    border-bottom: 2px solid #009A60;
+
+}
+
+body {
+
+    font-family: 'Rubik', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -80,11 +91,21 @@ li:hover {
 }
 
 footer {
+
   color: #fff;
-  background-color: #6f6f6f;
-  margin-top: 10px;
+
+  background-color: #474747;
+
   text-align: center;
+
   width: 100%;
-  height: 3em;
-  border-radius: 10px 10px 0 0;
+  height: 43px;
+
+  border-radius: 3px 3px 0 0;
+
+  position: fixed;
+  bottom: 0;
+
+    border-top: solid #009A60 1px;
+
 }

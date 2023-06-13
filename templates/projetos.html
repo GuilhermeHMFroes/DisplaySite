@@ -30,10 +30,10 @@
 </section>
 
 <script>
-    let a = document.getElementById('saiba-mais')
+    const a = document.getElementById('saiba-mais')
     a.addEventListener('click', function (event) {
         event.preventDefault();
-        var projectDetails = document.getElementById('project-details');
+        const projectDetails = document.getElementById('project-details');
         projectDetails.style.display = 'block';
         a.style.display = 'none'
     });

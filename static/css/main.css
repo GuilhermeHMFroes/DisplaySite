@@ -17,8 +17,8 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  justify-content: center; /* Center content vertically */
+  align-items: center; 
+  justify-content: center;
   background-color: #6f6f6f;
   width: 85vw;
   margin: 20px auto;
@@ -29,18 +29,21 @@ body {
 
 #sidebar {
   display: flex;
-  flex-direction: column; /* Display the sections vertically */
+  flex-direction: column;
   width: 100%;
   background-color: #3f3f3f;
   color: #00879A;
 }
 
 #sidebar-upper {
+  width: 90%;
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between; /* Add space between logo and site name */
   border-bottom: 1px solid #00879A; /* Add a bottom border to create the line */
-  padding: 10px;
+  padding: 5px;
 }
 
 #sidebar-lower {

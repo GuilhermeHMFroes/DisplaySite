@@ -10,9 +10,9 @@ def home():
 def sobre():
     return render_template('sobre.html')
 
-@app.route('/bate_papo')
-def bate_papo():
-    return render_template('bate_papo.html')
+@app.route('/institucional')
+def institucional():
+    return render_template('institucional.html')
 
 @app.route('/projetos')
 def projetos():

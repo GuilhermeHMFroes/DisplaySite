@@ -11,7 +11,7 @@ verde: #009A60
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #3f3f3f;
+  background-color: #fff;
   color: #00879A;
 }
 
@@ -21,8 +21,8 @@ verde: #009A60
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between; /* Add space between logo and site name */
-  border-bottom: 1px solid #00879A; /* Add a bottom border to create the line */
+  justify-content: space-between;
+  border-bottom: 1px solid #00879A; 
   padding: 5px;
 }
 
@@ -32,12 +32,13 @@ verde: #009A60
   align-items: center;
   padding-top: 10px;
   border-bottom: 5px solid #009A60;
+  color: #000;
 }
 
 .container {
 
-    background-color: #474747;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 
     flex-grow: 1;
     display: flex;
@@ -55,13 +56,15 @@ verde: #009A60
 
 body {
 
-    font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif;
 
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: #fff;
+
+  min-height: 100vh;
 
 }
 
@@ -77,35 +80,63 @@ li {
   padding: 1.2em 5em;
   border-radius: 10px 10px 0px 0px;
   margin-bottom: 0;
-  color: #fff;
+  color: #000;
 }
 
 a {
   text-decoration: none;
   padding-left: 2px;
+  color: #000;
 }
 
-li:hover {
-  transition: 0.3s;
+#home:hover {
+  transition: 0.6s;
   background-color: #009A60;
+  color: #fff;
+}
+
+#institucional:hover {
+  transition: 0.6s;
+  background-color: #df5b3c;
+  color: #fff;
+}
+
+#projetos:hover {
+  transition: 0.6s;
+  background-color: #f3e42e;
+}
+
+#sobre:hover {
+  transition: 0.6s;
+  background-color: #003a9a;
+  color: #fff;
 }
 
 footer {
 
-  color: #fff;
+  display: flex;
+  flex-direction: column;
 
-  background-color: #474747;
+  color: #000;
+
+  background-color: #fff;
 
   text-align: center;
 
   width: 100%;
-  height: 43px;
+  height: 10em;
 
   border-radius: 3px 3px 0 0;
 
   position: fixed;
   bottom: 0;
 
-    border-top: solid #009A60 1px;
+  border-top: solid #009A60 1px;
 
+}
+
+.carrossel {
+  height: 42vh;
+  width: 80vw;
+  background-color: black;
 }

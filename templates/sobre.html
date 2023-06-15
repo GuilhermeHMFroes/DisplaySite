@@ -2,7 +2,10 @@
 
 {% block content %}
 <script>
-    document.getElementById('sobre').style.backgroundColor = '#009A60'
+    document.getElementById('sobre').style.backgroundColor = '#003a9a'
+    document.getElementById('sobre').style.color = '#fff'
+    document.getElementById('sidebar-lower').style.borderColor = '#003a9a'
+
 </script>
 
 <h1>Time Display Lab</h1>
@@ -94,18 +97,7 @@
 </div>
 <h1>Redes Sociais</h1>
 
-<div id="redes-sociais">
-    <a href="">
-        <i class="fa-brands fa-instagram fa-5x"></i>
-    </a>
-    <a href="">
-        <i class="fa-brands fa-tiktok fa-5x"></i>
-    </a>
-    <a href="">
-        <i class="fa-brands fa-youtube fa-5x"></i>
-    </a>
-    
-</div>
+
 
 <style>
     #time {
@@ -128,17 +120,9 @@
         flex-basis: auto;
     }
 
-    #redes-sociais {
-        margin: 5em;
-        display: flex;
-        flex-direction: row;
-        gap: 10em;
-    }
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
+
+
 </style>
 
 {% endblock %}

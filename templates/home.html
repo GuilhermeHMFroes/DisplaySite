@@ -4,18 +4,22 @@
 
 <script>
     document.getElementById('home').style.backgroundColor = '#009A60'
-</script>
+    document.getElementById('home').style.color = '#fff'
+    document.getElementsByClassName('container')[0].style.backgroundColor = 'rgba(0, 154, 96, 0.1)'
 
-<h1>C A R R O S S E L </h1>
+</script>
 
 <!-- ordenar por índice do conteúdo recebido no app.py -->
 
+<div class="carrossel"></div>
 
 
 <!-- FIM DO CARROSSEL / INÍCIO DO CAMPO DE TEXTO  -->
 
 <section id="projetos-texto">
+
     <h1>CAMPO DE TEXTO</h1>
+    
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Perferendis modi illum aspernatur tempora distinctio ratione nisi amet
         error explicabo aliquid. Harum molestiae eos ad? Saepe dolores
@@ -30,9 +34,22 @@
         
     </div>
     
+    <!--
+
+        3 colunas com os baixáveis
+
+        - Biblioteca 
+        - Bate-Papo
+        - Jogos
+
+    -->
+    <div id="baixaveis">
+
+    </div>
+
     <section id="batepapo-texto">
 
-    <h1>SOBRE O BATE-PAPO TECNO</h1>
+    <h1>SOBRE O BATE-PAPO TECNOLÓGICO</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         Esse eos, minus deserunt ratione mollitia perferendis
         alias quia eveniet dolorem magnam labore distinctio animi
@@ -41,13 +58,15 @@
 
 <style>
     h1 {
-        text-align: center;
+        text-align: left;
     }
 
     section {
         margin-top: 5em;
         margin: 2em;
     }
+
+    
 </style>
 
 {% endblock %}

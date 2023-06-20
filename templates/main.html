@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/logo/logo.png">
     <title>Display</title>
 
 </head>
@@ -21,8 +22,8 @@
         <div id="sidebar-upper">
             <!-- {logo} Display -->
             <div style="display: flex; flex-direction: row; align-items: center;">
-                <img src="/static/images/logo/logobordabranca.png" alt="Home"
-                    height="48px" width="48px" style="padding: 1.4em;">
+                <img src="/static/images/logo/logobordabranca.png" alt="Home" height="48px" width="48px"
+                    style="padding: 1.4em;">
                 <p style="font-size: 20px;">DISPLAY LAB</p>
             </div>
 
@@ -41,8 +42,8 @@
                     <li id="projetos"> PROJETOS</li>
                 </a>
 
-                <a href="{{ url_for('bate_papo') }}">
-                    <li id="chat">BATE PAPO</li>
+                <a href="{{ url_for('institucional') }}">
+                    <li id="institucional">INSTITUCIONAL</li>
                 </a>
 
                 <a href="{{ url_for('sobre') }}">
@@ -51,7 +52,7 @@
 
             </ul>
         </div>
-        
+
     </div>
 
 
@@ -63,11 +64,39 @@
 
     </div>
 
-    <nav style="height: 45px;"></nav>
-
     <footer>
+        <h4>Segue a gente lá ;)</h4>
+        <div id="redes-sociais">
+            <a href="">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>
+
+        </div>
         <h4>&copy; DISPLAY LAB - 2023</h4>
     </footer>
+
+    <style>
+        #redes-sociais {
+            margin: 1.6em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 10em;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 
 </body>
 

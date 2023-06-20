@@ -2,18 +2,15 @@
 
 {% block content %}
 
-<script>
-    document.getElementById('institucional').style.backgroundColor = '#df5b3c'
-    document.getElementById('institucional').style.color = '#fff'
-    document.getElementById('sidebar-lower').style.borderColor = '#df5b3c'
-</script>
 
-<h1>Bate-Papo Tech</h1>
 
 <!-- para cara item do banco de dados -->
 
 <div class="bate-papo">
-    <img src="" alt="Capa do bate papo">
+    <!-- <img src="" alt="Capa do bate papo"> -->
+    <div class="carrossel"></div>
+    
+    <h1>Bate-Papo Tech</h1>
 
     <h1>Título</h1>
 
@@ -32,6 +29,12 @@
         padding: 3em;
         text-align: center;
     }
-</style>
+    </style>
+    <script>
+        document.getElementById('institucional').style.backgroundColor = '#df5b3c'
+        document.getElementById('institucional').style.color = '#fff'
+        document.getElementById('sidebar-lower').style.borderColor = '#df5b3c'
+        document.getElementsByClassName('container')[0].style.backgroundColor = 'rgba(223, 91, 60, 0.1)'
+    </script>
 
 {% endblock %}

@@ -99,13 +99,14 @@ a {
 
 #institucional:hover {
   transition: 0.6s;
-  background-color: #df5b3c;
+  background-color: #9A0087;
   color: #fff;
 }
 
 #projetos:hover {
   transition: 0.6s;
-  background-color: #f3e42e;
+  background-color: #147072;
+  color: #fff;
 }
 
 #sobre:hover {

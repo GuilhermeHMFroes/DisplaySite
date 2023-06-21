@@ -21,10 +21,12 @@
 
         <div id="sidebar-upper">
             <!-- {logo} Display -->
-            <div style="display: flex; flex-direction: row; align-items: center;">
-                <img src="/static/images/logo/logobordabranca.png" alt="Home" height="48px" width="48px"
-                    style="padding: 1.4em;">
-                <p style="font-size: 20px;">DISPLAY LAB</p>
+            <div>
+                <a href="{{ url_for('home') }}" style="display: flex; flex-direction: row; align-items: center; color: #00879A;">
+                    <img src="/static/images/logo/logobordabranca.png" alt="Home" height="48px" width="48px"
+                        style="padding: 1.4em;">
+                    <p style="font-size: 20px;">DISPLAY LAB</p>
+                </a>
             </div>
 
             <!-- {Login} -->

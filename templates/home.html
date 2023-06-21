@@ -8,52 +8,115 @@
     document.getElementsByClassName('container')[0].style.backgroundColor = 'rgba(0, 154, 96, 0.1)'
 
 </script>
-
 <!-- ordenar por índice do conteúdo recebido no app.py -->
 
-<div class="carrossel"></div>
 
 
 <!-- FIM DO CARROSSEL / INÍCIO DO CAMPO DE TEXTO  -->
 
-<section id="projetos-texto">
+<section>
+    
+    <h1>Uma breve apresentação</h1>
+    
+    <div id="text-1">
+        <p>O Display é um laboratório que tem como objetivo principal incentivar o
+            desenvolvimento de jogos digitais e tecnologias inovadoras. Através de
+            pesquisas e projetos educativos, o laboratório busca fomentar a criação
+            de jogos que possam ser utilizados como ferramentas pedagógicas, além
+            de proporcionar uma experiência prática para os estudantes.
+        </p>
+        
+        <p>
+            O laboratório também tem como objetivo formar profissionais 
+            capacitados para atuar no mercado de jogos digitais, que é uma área
+            em constante expansão e demanda cada vez mais profissionais 
+             qualificados. Através de parcerias com empresas e instituições, o 
+             Display busca criar oportunidades para que os estudantes possam 
+             colocar em prática os conhecimentos adquiridos em sala de aula.
+            </p>
+            
+            <p>
+                Um dos principais projetos desenvolvidos pelo Display é o jogo 
+                Indisciplina 2D, que aborda a problemática da indisciplina na 
+                escola. O jogo foi criado com o objetivo de ajudar os professores a 
+                lidar com esse problema de forma mais eficiente, proporcionando uma 
+            experiência lúdica para os alunos ao mesmo tempo em que ensina 
+            valores importantes como respeito e disciplina.
+        </p>
+        
+        <p>
+            Além disso, o Display também desenvolve projetos educativos como o 
+            EducaRedes, que utiliza redes de PCs para promover a educação e o 
+            aprendizado através de jogos. O projeto tem como objetivo principal 
+            levar a tecnologia para dentro das salas de aula, tornando o 
+            aprendizado mais interativo e divertido.
+        </p>
+        
+        <p>
+            Em resumo, o Display é um laboratório que tem como objetivo 
+            incentivar a pesquisa e o desenvolvimento de jogos digitais e 
+            tecnologias inovadoras, além de formar profissionais capacitados 
+            para atuar no mercado de jogos digitais. Com projetos educativos 
+            inovadores e uma equipe altamente qualificada, o laboratório tem se 
+            destacado no cenário nacional e internacional de jogos digitais.
+        </p>
+        
+        <div id="img"></div>
+    </div>
+    <h1>Conheça nossos conteúdos</h1>
+</section>
 
-    <h1>CAMPO DE TEXTO</h1>
+
+<div id="baixaveis">
     
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Perferendis modi illum aspernatur tempora distinctio ratione nisi amet
-        error explicabo aliquid. Harum molestiae eos ad? Saepe dolores
-        recusandae corporis quisquam pariatur.</p>
-    </section>
-    
-    <div id="batepapo-iframes">
+    <div id="bate-papo-home" class="baixavel">
+        <h1>Bate-papo Tech</h1>
         
-        <h1>B A T E - P A P O / iframes</h1>
-        
-        <iframe src="" frameborder="0">iframe aqui</iframe>
-        
+        <ul>
+            <li>ep1. </li>
+            <li>ep2. </li>
+            <li>ep3. </li>
+        </ul>
     </div>
     
-    <!--
+    <div id="biblioteca" class="baixavel">
+        <h1>Biblioteca</h1>
+        
+        <ul>
+            <li>pdf 1</li>
+            <li>pdf 2</li>
+            <li>pdf 3</li>
+            <li>pdf 4</li>
+        </ul>
+    </div>
+    
+    <div id="games" class="baixavel">
+        <h1>Games</h1>
 
-        3 colunas com os baixáveis
-
-        - Biblioteca 
-        - Bate-Papo
-        - Jogos
-
-    -->
-    <div id="baixaveis">
-
+        <ul>
+            <li>Indisciplina 2D</li>
+            <li></li>
+        </ul>
     </div>
 
-    <section id="batepapo-texto">
+</div>
 
-    <h1>SOBRE O BATE-PAPO TECNOLÓGICO</h1>
+<section id="noticias">
+    
+    <h1>NOTÍCIAS</h1>
+    
+    <div class="carrossel" style="color: white;">
+        <h1>CARROSSEL</h1>
+    </div>
+
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         Esse eos, minus deserunt ratione mollitia perferendis
         alias quia eveniet dolorem magnam labore distinctio animi
-        asperiores cum soluta eligendi rerum modi impedit!</p>
+        asperiores cum soluta eligendi rerum modi impedit!
+    </p>
+    
+    
+    
 </section>
 
 <style>
@@ -63,10 +126,65 @@
 
     section {
         margin-top: 5em;
-        margin: 2em;
+        margin: 5em;
+        height: fit-content;
     }
 
+    section p {
+        margin: 15px;
+        text-align: left;
+        font-size: x-large;
+    }
+
+    section h1 {
+        font-size: 5em;
+    }
+
+    #baixaveis {
+        margin: 2em;
+        display: flex;
+        flex-direction: row;
+        gap: 4em;
+    }
+
+    .baixavel {
+        text-align: left;
+        height: fit-content;
+        width: 15vw;
+        padding: 1.4em;
+        padding: 1.2em;
+        border-radius: 2em;
+    }
     
+    .baixavel ul {
+        display: block;
+        margin: 0;    }
+
+    .baixavel li {
+        margin-left: 0;
+        margin: 5px;
+        padding-left: 0;
+    }
+
+    #bate-papo-home {
+        background-color: rgba(0, 229, 142, 0.3);
+    }
+
+    #biblioteca {
+        background-color: rgba(0, 229, 142, 0.5);
+    }
+
+    #games {
+        background-color: rgba(0, 229, 142, 0.9);
+    }
+
+    #text-1 {
+        font-size: larger;
+        height: fit-content;
+        width: 60vw;
+        margin: 0;
+    }
+
 </style>
 
 {% endblock %}

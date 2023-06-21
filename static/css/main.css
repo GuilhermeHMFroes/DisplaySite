@@ -155,3 +155,57 @@ footer {
   display: table-cell;
   vertical-align: middle;
 }
+
+.projetoLayout1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+
+  background-color: rgb(2, 151, 94, 0.7);
+  padding: 20px;
+  margin: 10px 0px 10px;
+  border-radius: 5px;
+}
+
+.projetoLayout1Upper {
+  display: flex;
+  margin: 0px;
+  gap: 20px;
+}
+
+.projetoLayout1Lower {
+  display: flex;
+  margin: 0px;
+}
+
+.projetoLayout1Titulo {
+  align-self: center;
+  justify-self: center;
+  margin: 0px;
+}
+
+.projetoLayout1Texto1 {
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+.projetoLayout1Texto2 {
+  font-size: 1.5em;
+  margin: 0px;
+}
+
+.projetoLayout1Image {
+  width: 200px;
+  height: 100px;
+}
+
+@media (max-width: 980px) {
+  .projetoLayout1Upper {
+    flex-wrap: wrap;
+  }
+  
+  .projetoLayout1Lower {
+    flex-wrap: wrap;
+  }
+}

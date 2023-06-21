@@ -83,6 +83,7 @@ li {
   margin-bottom: 0;
   color: #000;
   border: solid 1px #000;
+  border-bottom: 0px;
 }
 
 a {

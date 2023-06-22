@@ -205,6 +205,8 @@ footer {
   max-width: 200px;
   padding: 5px;
   border-radius: 20px;
+  margin: 0px 20px;
+  
 
 }
 
@@ -262,4 +264,5 @@ footer {
   min-width: 200px;
   padding: 5px;
   border-radius: 20px;
+  margin: 0px 20px;
 }

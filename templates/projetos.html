@@ -2,25 +2,22 @@
 
 {% block content %}
 
-<script>
-    document.getElementById('projetos').style.backgroundColor = '#147072'
-    document.getElementById('projetos').style.color = '#fff'
-    document.getElementById('sidebar-lower').style.borderColor = '#147072'
-    document.getElementsByClassName('container')[0].style.backgroundColor = 'rgb(20, 112, 114, 0.1)'
-
-    document.querySelector(":root").style.setProperty("--footBorderColor", "#147072")
-</script>
-
 <!-- Para cada Projeto: -->
 
-<div class="carrossel"></div>
+<div class="carrossel" style="position: relative;">
+    <img src="../static/images/projetos/carrosel/1.png" alt="" width="100%" height="100%" style="position: absolute;">
+    <div class="carrosselBtns">
+
+    </div>
+    
+</div>
 
 <!-- <img src="" alt="Capa do Projeto" width="600" height="800"> link da imagem, nome do projeto -->
 <h1>Título do projeto</h1>
 
 <p>Resumo sobre o Projeto</p>
 
-<a href="#" id="saiba-mais">
+<a href="#" class="saiba-mais">
     <div class="botao">
         SAIBA MAIS
     </div>
@@ -38,7 +35,7 @@
         <img src="../static/images/logo/logo.jpg" alt="logo" class="projetoLayout1Image">
     </div>
     <br>
-    <a href="#" id="saiba-mais">
+    <a href="#" class="saiba-mais">
         <div class="botao">
             SAIBA MAIS
         </div>
@@ -62,7 +59,7 @@
         <img src="../static/images/projetos/exterminandoDrogas2.png" alt="logo" class="projetoLayout2Image">
     </div>
     <br>
-    <a href="#" id="saiba-mais">
+    <a href="#" class="saiba-mais">
         <div class="botao">
             SAIBA MAIS
         </div>
@@ -84,15 +81,40 @@
 </section>
 
 <script>
-    const a = document.getElementById('saiba-mais')
-    a.addEventListener('click', function (event) {
-        event.preventDefault();
-        const projectDetails = document.getElementById('project-details');
-        projectDetails.style.display = 'block';
-        a.style.display = 'none'
-    });
+    document.getElementById('projetos').style.backgroundColor = '#147072'
+    document.getElementById('projetos').style.color = '#fff'
+    document.getElementById('sidebar-lower').style.borderColor = '#147072'
+    document.getElementsByClassName('container')[0].style.backgroundColor = 'rgb(20, 112, 114, 0.1)'
+    document.querySelector(":root").style.setProperty("--footBorderColor", "#147072")
+
+    let carrosselArray = ["../static/images/projetos/carrosel/1.png", "../static/images/projetos/carrosel/2.png"];
+    let carrossel = document.querySelector(".carrossel");
+    let carrosselImage = carrossel.childNodes[1];
+
+    let countIndexCarrosel = 0;
+    carrosselArray.forEach((element, index) => {
+        let newBtnCarrossel = document.createElement("button");
+        newBtnCarrossel.innerText = (index + 1).toString();
+
+        newBtnCarrossel.addEventListener("click", () => {
+            carrosselImage.src = carrosselArray[index];
+            countIndexCarrosel = index;
+        })
+
+        carrossel.childNodes[3].appendChild(newBtnCarrossel);
+    })
+
+    
+    setInterval(() => {
+        if (countIndexCarrosel > (carrosselArray.length - 1)) {
+            countIndexCarrosel = 0;
+        }
+        carrosselImage.src = carrosselArray[countIndexCarrosel];
+        countIndexCarrosel++;
+    }, 5000)
+
+
+    
 </script>
-
-
 
 {% endblock %}

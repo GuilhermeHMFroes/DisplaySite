@@ -148,6 +148,27 @@ footer {
   margin: 2em;
 }
 
+.carrosselBtns {
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  display: flex;
+  align-items: end; 
+  justify-content: center;
+}
+
+.carrosselBtns > button {
+  cursor: pointer;
+  border: 0px;
+  border-radius: 50%;
+  background-color: ghostwhite;
+  margin: 10px 5px;
+}
+
+.saiba-mais {
+  width: 10em;
+}
+
 .botao {
   height: 2em;
   width: 10em;

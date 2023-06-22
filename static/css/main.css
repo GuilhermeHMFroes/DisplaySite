@@ -7,6 +7,9 @@ verde: #009A60
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+:root {
+  --footBorderColor: #009A60;
+}
 
 #sidebar {
   display: flex;
@@ -134,7 +137,7 @@ footer {
 
   bottom: 0;
 
-  border-top: solid #009A60 10px;
+  border-top: solid var(--footBorderColor) 10px;
 
 }
 

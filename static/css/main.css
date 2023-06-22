@@ -159,7 +159,6 @@ footer {
 .projetoLayout1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 95%;
 
   background-color: rgb(2, 151, 94, 0.7);
@@ -187,7 +186,7 @@ footer {
 
 .projetoLayout1Texto1 {
   font-size: 1.5em;
-  margin: 5px;
+  margin: 0px;
 }
 
 .projetoLayout1Texto2 {
@@ -196,8 +195,11 @@ footer {
 }
 
 .projetoLayout1Image {
-  width: 200px;
-  height: 100px;
+  width: 25%;
+  max-width: 200px;
+  padding: 5px;
+  border-radius: 20px;
+
 }
 
 @media (max-width: 980px) {
@@ -208,4 +210,49 @@ footer {
   .projetoLayout1Lower {
     flex-wrap: wrap;
   }
+
+  .projetoLayout2Lower {
+    flex-wrap: wrap;
+  }
+}
+
+.projetoLayout2 {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+
+  background-color: rgb(2, 151, 94, 0.7);
+  padding: 20px;
+  margin: 10px 0px 10px;
+  border-radius: 5px;
+}
+
+.projetoLayout2Upper {
+  align-self: self-start;
+}
+
+.projetoLayout2Titulo {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.projetoLayout2Lower {
+  display: flex;
+  margin: 0px;
+}
+
+.projetoLayout2Texto {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.5em;
+}
+
+.projetoLayout2Image {
+  width: 15%;
+  height: 100%;
+  margin: 0px;
+  max-width: 200px;
+  min-width: 200px;
+  padding: 5px;
+  border-radius: 20px;
 }

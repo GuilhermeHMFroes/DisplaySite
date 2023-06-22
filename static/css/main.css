@@ -55,7 +55,7 @@ verde: #009A60
     padding: 10px;
 
     border-radius: 5px;
-    border-bottom: 2px solid #009A60;
+    border-bottom: 2px solid var(--footBorderColor);
 
 }
 
@@ -164,7 +164,8 @@ footer {
   flex-direction: column;
   width: 95%;
 
-  background-color: rgb(2, 151, 94, 0.7);
+  background-color: rgba(0, 58, 154, 0.7);
+  color: #fff;
   padding: 20px;
   margin: 10px 0px 10px;
   border-radius: 5px;
@@ -190,11 +191,13 @@ footer {
 .projetoLayout1Texto1 {
   font-size: 1.5em;
   margin: 0px;
+  text-align: justify;
 }
 
 .projetoLayout1Texto2 {
   font-size: 1.5em;
   margin: 0px;
+  text-align: justify;
 }
 
 .projetoLayout1Image {
@@ -248,6 +251,7 @@ footer {
   margin: 0px;
   padding: 0px;
   font-size: 1.5em;
+  text-align: justify;
 }
 
 .projetoLayout2Image {

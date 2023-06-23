@@ -1,0 +1,94 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+
+<h1>Podcast</h1>
+
+<div style="width: 98%;">
+    <p>Um podcast fascinante que mergulha no mundo da tecnologia e carreira! Junte-se a nós enquanto exploramos os últimos avanços tecnológicos, compartilhamos insights valiosos sobre desenvolvimento profissional e mergulhamos em discussões instigantes com especialistas da indústria.</p>
+    <p>Se você é um entusiasta de tecnologia em busca de conhecimento, um profissional em transição de carreira ou alguém que busca conselhos valiosos para se destacar na indústria, esse é o podcast perfeito para você. Aperte o play e embarque nesta jornada emocionante com a gente. Vamos explorar o mundo da tecnologia e descobrir os segredos para o sucesso profissional juntos!</p>
+</div>
+
+
+<div class="episode">
+    <h3>1. De estagiario a desenvolvedor senior em menos de 5 anos</h3>
+    <p style="color: #fff; margin: 0px;">
+        No episódio da vez, mergulhamos na inspiradora história de nosso convidado, um indivíduo excepcional que conseguiu alcançar o cargo de desenvolvedor sênior em menos de cinco anos, partindo de uma posição de estagiário. Nesta entrevista exclusiva, descobrimos as estratégias, desafios e aprendizados que levaram ele a trilhar uma jornada de sucesso tão impressionante.
+        <span style="display: none;">
+            Este episódio é uma fonte de inspiração para todos aqueles que almejam avançar em suas carreiras de tecnologia. Ao ouvir a história de nosso convidado, os ouvintes terão a oportunidade de absorver lições valiosas e insights práticos sobre como acelerar o crescimento profissional e atingir posições de destaque em um curto espaço de tempo.
+            Prepare-se para uma jornada estimulante, repleta de conselhos valiosos, dicas práticas e reflexões inspiradoras. Este episódio certamente motivará todos aqueles que buscam conquistar seus objetivos profissionais em um ritmo acelerado. Não perca essa oportunidade de aprender com uma história de sucesso verdadeiramente excepcional!
+        </span>
+        <button class="mostrarMaisBtnPodcast">Mostrar mais</button>
+    </p>
+    <iframe class="episodioIframe" width="90%" src="https://www.youtube.com/embed/ZnuwB35GYMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <button class="mostrarEpBtnPodcast">Mostrar episodio</button>
+</div>
+
+<div class="episode">
+    <h3>1. De estagiario a desenvolvedor senior em menos de 5 anos</h3>
+    <p style="color: #fff; margin: 0px;">
+        No episódio da vez, mergulhamos na inspiradora história de nosso convidado, um indivíduo excepcional que conseguiu alcançar o cargo de desenvolvedor sênior em menos de cinco anos, partindo de uma posição de estagiário. Nesta entrevista exclusiva, descobrimos as estratégias, desafios e aprendizados que levaram ele a trilhar uma jornada de sucesso tão impressionante.
+        <span style="display: none;">
+            Este episódio é uma fonte de inspiração para todos aqueles que almejam avançar em suas carreiras de tecnologia. Ao ouvir a história de nosso convidado, os ouvintes terão a oportunidade de absorver lições valiosas e insights práticos sobre como acelerar o crescimento profissional e atingir posições de destaque em um curto espaço de tempo.
+            Prepare-se para uma jornada estimulante, repleta de conselhos valiosos, dicas práticas e reflexões inspiradoras. Este episódio certamente motivará todos aqueles que buscam conquistar seus objetivos profissionais em um ritmo acelerado. Não perca essa oportunidade de aprender com uma história de sucesso verdadeiramente excepcional!
+        </span>
+        <button class="mostrarMaisBtnPodcast">Mostrar mais</button>
+    </p>
+    <iframe class="episodioIframe" width="90%" src="https://www.youtube.com/embed/ZnuwB35GYMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <button class="mostrarEpBtnPodcast">Mostrar episodio</button>
+</div>
+
+<div class="episode">
+    <h3>1. De estagiario a desenvolvedor senior em menos de 5 anos</h3>
+    <p style="color: #fff; margin: 0px;">
+        No episódio da vez, mergulhamos na inspiradora história de nosso convidado, um indivíduo excepcional que conseguiu alcançar o cargo de desenvolvedor sênior em menos de cinco anos, partindo de uma posição de estagiário. Nesta entrevista exclusiva, descobrimos as estratégias, desafios e aprendizados que levaram ele a trilhar uma jornada de sucesso tão impressionante.
+        <span style="display: none;">
+            Este episódio é uma fonte de inspiração para todos aqueles que almejam avançar em suas carreiras de tecnologia. Ao ouvir a história de nosso convidado, os ouvintes terão a oportunidade de absorver lições valiosas e insights práticos sobre como acelerar o crescimento profissional e atingir posições de destaque em um curto espaço de tempo.
+            Prepare-se para uma jornada estimulante, repleta de conselhos valiosos, dicas práticas e reflexões inspiradoras. Este episódio certamente motivará todos aqueles que buscam conquistar seus objetivos profissionais em um ritmo acelerado. Não perca essa oportunidade de aprender com uma história de sucesso verdadeiramente excepcional!
+        </span>
+        <button class="mostrarMaisBtnPodcast">Mostrar mais</button>
+    </p>
+    <iframe class="episodioIframe" width="90%" src="https://www.youtube.com/embed/ZnuwB35GYMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <button class="mostrarEpBtnPodcast">Mostrar episodio</button>
+</div>
+
+
+
+<script>
+    document.getElementById('projetos').style.backgroundColor = '#147072'
+    document.getElementById('projetos').style.color = '#fff'
+    document.getElementById('sidebar-lower').style.borderColor = '#147072'
+    document.getElementsByClassName('container')[0].style.backgroundColor = 'rgb(20, 112, 114, 0.1)'
+    document.querySelector(":root").style.setProperty("--footBorderColor", "#147072")
+
+    let mostrarMaisBtns = document.querySelectorAll(".mostrarMaisBtnPodcast");
+    mostrarMaisBtns.forEach(element => {
+        element.addEventListener("click", () => {
+            if (element.innerText === "Mostrar mais") {
+                element.innerText = "Mostrar menos";
+                element.parentNode.childNodes[1].style.display = "inline";
+            } else {
+                element.innerText = "Mostrar mais"
+                element.parentNode.childNodes[1].style.display = "none";
+                
+            }
+        })
+    });
+
+    let mostrarEpBtns = document.querySelectorAll(".mostrarEpBtnPodcast");
+    mostrarEpBtns.forEach(element => {
+        element.addEventListener("click", () => {
+            if (element.innerText === "Mostrar episodio") {
+                element.innerText = "Esconder episodio";
+                element.parentNode.childNodes[5].style.display = "inline";
+            } else {
+                element.innerText = "Mostrar episodio"
+                element.parentNode.childNodes[5].style.display = "none";
+            }
+        })
+    });
+    
+</script>
+
+{% endblock %}

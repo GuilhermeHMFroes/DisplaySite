@@ -2,25 +2,24 @@
 
 {% block content %}
 
-<script>
-    document.getElementById('projetos').style.backgroundColor = '#147072'
-    document.getElementById('projetos').style.color = '#fff'
-    document.getElementById('sidebar-lower').style.borderColor = '#147072'
-    document.getElementsByClassName('container')[0].style.backgroundColor = 'rgb(20, 112, 114, 0.1)'
-
-
-</script>
-
 <!-- Para cada Projeto: -->
 
-<div class="carrossel"></div>
+<div class="carrossel" style="position: relative;">
+    <a href="">
+        <img src="../static/images/projetos/carrosel/1.png" alt="" width="100%" height="100%" style="position: absolute;">
+    </a>
+    <div class="carrosselBtns">
+
+    </div>
+    
+</div>
 
 <!-- <img src="" alt="Capa do Projeto" width="600" height="800"> link da imagem, nome do projeto -->
 <h1>Título do projeto</h1>
 
 <p>Resumo sobre o Projeto</p>
 
-<a href="#" id="saiba-mais">
+<a href="#" class="saiba-mais">
     <div class="botao">
         SAIBA MAIS
     </div>
@@ -30,70 +29,41 @@
 <div class="projetoLayout1">
     <div class="projetoLayout1Upper">
         <h1 class="projetoLayout1Titulo">Podcast</h1>
-        <p class="projetoLayout1Texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores, 
-            neque tenetur aliquam, possimus id earum aperiam eos similique dignissimos, 
-            minus totam autem beatae itaque cum iusto eaque modi porro!</p>
+        <p class="projetoLayout1Texto1">Um podcast fascinante que mergulha no mundo da tecnologia e carreira! Junte-se a nós enquanto exploramos os últimos avanços tecnológicos, compartilhamos insights valiosos sobre desenvolvimento profissional e mergulhamos em discussões instigantes com especialistas da indústria.</p>
     </div>
+    <br>
     <div class="projetoLayout1Lower">
-        <p class="projetoLayout1Texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores, 
-            neque tenetur aliquam, possimus id earum aperiam eos similique dignissimos, 
-            minus totam autem beatae itaque cum iusto eaque modi porro!Lorem ipsum 
-            minus totam autem beatae itaque cum iusto eaque modi porro!</p>
+        <p class="projetoLayout1Texto2">Se você é um entusiasta de tecnologia em busca de conhecimento, um profissional em transição de carreira ou alguém que busca conselhos valiosos para se destacar na indústria, esse é o podcast perfeito para você. Aperte o play e embarque nesta jornada emocionante com a gente. Vamos explorar o mundo da tecnologia e descobrir os segredos para o sucesso profissional juntos!</p>
         <img src="../static/images/logo/logo.jpg" alt="logo" class="projetoLayout1Image">
     </div>
-    <a href="#" id="saiba-mais">
+    <br>
+    <a href="{{ url_for('projetoPodcast') }}" class="saiba-mais">
         <div class="botao">
             SAIBA MAIS
         </div>
     </a>
 </div>
 
-<div class="projetoLayout1">
-    <div class="projetoLayout1Upper">
-        <h1 class="projetoLayout1Titulo">Podcast</h1>
-        <p class="projetoLayout1Texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores, 
-            neque tenetur aliquam, possimus id earum aperiam eos similique dignissimos, 
-            minus totam autem beatae itaque cum iusto eaque modi porro!</p>
-    </div>
-    <div class="projetoLayout1Lower">
-        <p class="projetoLayout1Texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores, 
-            neque tenetur aliquam, possimus id earum aperiam eos similique dignissimos, 
-            minus totam autem beatae itaque cum iusto eaque modi porro!Lorem ipsum 
-            minus totam autem beatae itaque cum iusto eaque modi porro!</p>
-        <img src="../static/images/logo/logo.jpg" alt="logo" class="projetoLayout1Image">
-    </div>
-    <a href="#" id="saiba-mais">
-        <div class="botao">
-            SAIBA MAIS
-        </div>
-    </a>
-</div>
 
-<div class="projetoLayout1">
-    <div class="projetoLayout1Upper">
-        <h1 class="projetoLayout1Titulo">Podcast</h1>
-        <p class="projetoLayout1Texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores, 
-            neque tenetur aliquam, possimus id earum aperiam eos similique dignissimos, 
-            minus totam autem beatae itaque cum iusto eaque modi porro!</p>
-    </div>
-    <div class="projetoLayout1Lower">
-        <p class="projetoLayout1Texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores, 
-            neque tenetur aliquam, possimus id earum aperiam eos similique dignissimos, 
-            minus totam autem beatae itaque cum iusto eaque modi porro!Lorem ipsum 
-            minus totam autem beatae itaque cum iusto eaque modi porro!</p>
-        <img src="../static/images/logo/logo.jpg" alt="logo" class="projetoLayout1Image">
-    </div>
-    <a href="#" id="saiba-mais">
-        <div class="botao">
-            SAIBA MAIS
-        </div>
-    </a>
-</div>
 
 <!-- Bate-papo -->
 <!-- Jogos -->
-<div>
 
+<div class="projetoLayout2">
+    <div class="projetoLayout2Upper">
+        <h1 class="projetoLayout2Titulo">Exterminando Drogas (GAME)</h1>
+    </div>
+    <div class="projetoLayout2Lower">
+        <p class="projetoLayout2Texto">"Exterminando Drogas" é um emocionante jogo educacional em 2D que busca conscientizar os jogadores sobre os perigos das drogas. Com gráficos desenhados à mão, o jogo transporta os jogadores para duas ilhas misteriosas, onde vivem dois corajosos irmãos. Infelizmente, sua amada irmã foi capturada por uma gangue de traficantes.
+            Determinados a resgatar sua irmã e combater o mal que assola as ilhas, os dois irmãos embarcam em uma jornada cheia de desafios e perigos. Nessa aventura de plataforma, eles devem superar obstáculos e enfrentar inimigos</p>
+        <img src="../static/images/projetos/exterminandoDrogas2.png" alt="logo" class="projetoLayout2Image">
+    </div>
+    <br>
+    <a href="#" class="saiba-mais">
+        <div class="botao">
+            SAIBA MAIS
+        </div>
+    </a>
 </div>
 
 <!-- Comunicação -->
@@ -111,15 +81,66 @@
 </section>
 
 <script>
-    const a = document.getElementById('saiba-mais')
-    a.addEventListener('click', function (event) {
-        event.preventDefault();
-        const projectDetails = document.getElementById('project-details');
-        projectDetails.style.display = 'block';
-        a.style.display = 'none'
-    });
+    document.getElementById('projetos').style.backgroundColor = '#147072'
+    document.getElementById('projetos').style.color = '#fff'
+    document.getElementById('sidebar-lower').style.borderColor = '#147072'
+    document.getElementsByClassName('container')[0].style.backgroundColor = 'rgb(20, 112, 114, 0.1)'
+    document.querySelector(":root").style.setProperty("--footBorderColor", "#147072")
+
+
+    let carrosselArray = [["../static/images/projetos/carrosel/1.png", "Podcast", "https://www.google.com"], ["../static/images/projetos/carrosel/2.png", "Exterminando Drogas", "https://www.youtube.com"], ["../static/images/logo/logo.png", "logo", "https://open.spotify.com"]];
+    let carrossel = document.querySelector(".carrossel");
+    let carrosselLink = carrossel.childNodes[1];
+    let carrosselImage = carrossel.childNodes[1].childNodes[1];
+
+
+    let countIndexCarrosel = 0;
+    carrosselLink.href = carrosselArray[countIndexCarrosel][2];
+    carrosselImage.alt = carrosselArray[countIndexCarrosel][1];
+    carrosselImage.src = carrosselArray[countIndexCarrosel][0];
+
+
+    carrosselArray.forEach((element, index) => {
+        let newBtnCarrossel = document.createElement("button");
+        newBtnCarrossel.innerText = (index + 1).toString();
+
+        newBtnCarrossel.addEventListener("click", () => {
+            carrosselLink.href = carrosselArray[index][2];
+            carrosselImage.alt = carrosselArray[index][1];
+            carrosselImage.src = carrosselArray[index][0];
+            countIndexCarrosel = index;
+            destacarBtn(countIndexCarrosel);
+        })
+
+        carrossel.childNodes[3].appendChild(newBtnCarrossel);
+    })
+
+
+    destacarBtn(countIndexCarrosel);
+    
+
+    setInterval(() => {
+        countIndexCarrosel++;
+        if (countIndexCarrosel > (carrosselArray.length - 1)) {
+            countIndexCarrosel = 0;
+        }
+        carrosselLink.href = carrosselArray[countIndexCarrosel][2];
+        carrosselImage.alt = carrosselArray[countIndexCarrosel][1];
+        carrosselImage.src = carrosselArray[countIndexCarrosel][0];
+        destacarBtn(countIndexCarrosel);
+    }, 5000)
+
+
+    function destacarBtn(countIndexCarrosel){
+        for(let i=1;i<carrossel.childNodes[3].childNodes.length;i++){
+            if (countIndexCarrosel === (i-1)) {
+                carrossel.childNodes[3].childNodes[i].style.border = "2px solid black"
+            } else {
+                carrossel.childNodes[3].childNodes[i].style.border = "0px";
+            }
+        }
+    }
+    
 </script>
-
-
 
 {% endblock %}

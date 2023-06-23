@@ -17,3 +17,7 @@ def institucional():
 @app.route('/projetos')
 def projetos():
     return render_template('projetos.html')
+
+@app.route('/projetos/podcast')
+def projetoPodcast():
+    return render_template('projetoPodcast.html')

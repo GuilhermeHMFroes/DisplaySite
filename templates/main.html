@@ -17,44 +17,40 @@
 <body>
 
     <!-- Menu/Sidebar -->
-    <div id="sidebar">
-
-        <div id="sidebar-upper">
-            <!-- {logo} Display -->
-            <div>
-                <a href="{{ url_for('home') }}" style="display: flex; flex-direction: row; align-items: center; color: #00879A;">
-                    <img src="/static/images/logo/logobordabranca.png" alt="Home" height="48px" width="48px"
-                        style="padding: 1.4em;">
-                    <p style="font-size: 20px;">DISPLAY LAB</p>
-                </a>
-            </div>
-
-            <!-- {Login} -->
-
+    <div id="sidebar-upper">
+        <!-- {logo} Display -->
+        <div>
+            <a href="{{ url_for('home') }}" style="display: flex; flex-direction: row; align-items: center; color: #00879A;">
+                <img src="/static/images/logo/logobordabranca.png" alt="Home" height="48px" width="48px"
+                    style="padding: 1.4em;">
+                <p style="font-size: 20px;">DISPLAY LAB</p>
+            </a>
         </div>
 
-        <div id="sidebar-lower">
-            <ul id="routes">
+        <!-- {Login} -->
 
-                <a href="{{ url_for('home') }}">
-                    <li id="home">HOME</li>
-                </a>
+    </div>
 
-                <a href="{{url_for('projetos')}}">
-                    <li id="projetos"> PROJETOS</li>
-                </a>
+    <div id="sidebar-lower">
+        <ul id="routes">
 
-                <a href="{{ url_for('institucional') }}">
-                    <li id="institucional">INSTITUCIONAL</li>
-                </a>
+            <a href="{{ url_for('home') }}">
+                <li id="home">HOME</li>
+            </a>
 
-                <a href="{{ url_for('sobre') }}">
-                    <li id="sobre">QUEM SOMOS</li>
-                </a>
+            <a href="{{url_for('projetos')}}">
+                <li id="projetos"> PROJETOS</li>
+            </a>
 
-            </ul>
-        </div>
+            <a href="{{ url_for('institucional') }}">
+                <li id="institucional">INSTITUCIONAL</li>
+            </a>
 
+            <a href="{{ url_for('sobre') }}">
+                <li id="sobre">QUEM SOMOS</li>
+            </a>
+
+        </ul>
     </div>
 
 
@@ -99,6 +95,10 @@
             color: black;
         }
     </style>
+
+    <script>
+
+    </script>
 
 </body>
 

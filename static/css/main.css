@@ -31,6 +31,12 @@ verde: #009A60
 }
 
 #sidebar-lower {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +87,7 @@ ul {
 }
 
 li {
-  padding: 1.2em 5em;
+  padding: 1.2em 7vw;
   border-radius: 10px 10px 0px 0px;
   margin-bottom: 0;
   color: #000;
@@ -302,11 +308,12 @@ footer {
 /*-------------------------------------------PROJETO-PODCAST/START-------------------------------------------*/
 
 .episode {
-  width: 95%;
+  width: 90%;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
   background-color: rgba(10, 0, 154, 0.644);
+  font-size: 1.2em;
 
   display: flex;
   flex-direction: column;

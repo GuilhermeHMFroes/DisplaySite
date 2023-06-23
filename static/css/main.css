@@ -119,6 +119,10 @@ a {
   color: #fff;
 }
 
+#sobre {
+  white-space: nowrap;
+}
+
 footer {
 
   display: flex;

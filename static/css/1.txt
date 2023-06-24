@@ -1,1 +1,0 @@
-arquivo Criado para pasta ser enviada para o git hub.

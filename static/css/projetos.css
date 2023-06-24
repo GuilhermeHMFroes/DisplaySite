@@ -1,3 +1,42 @@
+.carrossel {
+    /*height: 42vh;*/
+    width: 80vw;
+    aspect-ratio: 84 / 25;
+    background-color: #fff;
+    margin: 2em;
+}
+
+.carrossel > a {
+    margin: 0px;
+    padding: 0px;
+}
+
+.carrossel > a > img {
+    width: 100%;
+    height: 100%;
+    --transitionTime: 350ms;
+    transition-duration: var(--transitionTime);
+    position: absolute;
+}
+
+.carrosselBtns {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: flex;
+    align-items: end; 
+    justify-content: center;
+}
+
+.carrosselBtns > button {
+    cursor: pointer;
+    border: 0px;
+    border-radius: 50%;
+    background-color: ghostwhite;
+    margin: 10px 5px;
+}
+
 .saiba-mais {
     width: 10em;
 }
@@ -65,17 +104,17 @@
 }
 
 @media (max-width: 980px) {
-.projetoLayout1Upper {
-    flex-wrap: wrap;
-}
+    .projetoLayout1Upper {
+        flex-wrap: wrap;
+    }
 
-.projetoLayout1Lower {
-    flex-wrap: wrap;
-}
+    .projetoLayout1Lower {
+        flex-wrap: wrap;
+    }
 
-.projetoLayout2Lower {
-    flex-wrap: wrap;
-}
+    .projetoLayout2Lower {
+        flex-wrap: wrap;
+    }
 }
 
 .projetoLayout2 {

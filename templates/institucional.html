@@ -1,5 +1,12 @@
 {% extends "main.html" %}
 
+{% block head %}
+
+<link rel="stylesheet" href="../static/css/institucional.css">
+
+{% endblock %}
+
+
 {% block content %}
 
 
@@ -24,19 +31,11 @@
     </section>
 </div>
 
-<style>
-    .institucional {
-        padding: 3em;
-        text-align: center;
-    }
-    </style>
-    <script>
-        document.getElementById('institucional').style.backgroundColor = '#9A0087'
-        document.getElementById('institucional').style.color = '#fff'
-        document.getElementById('sidebar-lower').style.borderColor = '#9A0087'
-        document.getElementsByClassName('container')[0].style.backgroundColor = 'rgba(154, 0, 135, 0.1)'
+{% endblock %}
 
-        document.querySelector(":root").style.setProperty("--footBorderColor", "#9A0087")
-    </script>
+
+{% block script %}
+
+<script src="../static/js/institucional.js"></script>
 
 {% endblock %}

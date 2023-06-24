@@ -1,14 +1,13 @@
 {% extends "main.html" %}
 
+{% block head %}
+
+<link rel="stylesheet" href="../static/css/sobre.css">
+
+{% endblock %}
+
+
 {% block content %}
-<script>
-    document.getElementById('sobre').style.backgroundColor = '#003a9a'
-    document.getElementById('sobre').style.color = '#fff'
-    document.getElementById('sidebar-lower').style.borderColor = '#003a9a'
-    document.getElementsByClassName('container')[0].style.backgroundColor = 'rgba(0, 58, 154, 0.1)'
-    
-    document.querySelector(":root").style.setProperty("--footBorderColor", "#003a9a")
-</script>
 
 <h1>DOCENTES</h1>
 <div class="time">
@@ -119,31 +118,11 @@
 
 </div>
 
-
-<style>
-    .time {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 2em;
-        margin: 1.2em;
-    }
-
-    h1 {
-        text-align: left;
-        float: left;
-        clear: left;
-    }
-
-    .integrante {
-        height: fit-content;
-        width: 10em;
-        text-align: center;
-        box-sizing: border-box;
-        padding: 1em;
-    }
+{% endblock %}
 
 
-</style>
+{% block script %}
+
+<script src="../static/js/sobre.js"></script>
 
 {% endblock %}

@@ -149,6 +149,16 @@ footer {
 
 }
 
+#redes-sociais {
+  margin: 1.6em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10em;
+}
+
 .carrossel {
   height: 42vh;
   width: 80vw;
@@ -159,6 +169,10 @@ footer {
 .carrossel > a {
   margin: 0px;
   padding: 0px;
+}
+
+.carrossel > a > img {
+  object-fit:cover;
 }
 
 .carrosselBtns {
@@ -178,175 +192,3 @@ footer {
   background-color: ghostwhite;
   margin: 10px 5px;
 }
-
-.saiba-mais {
-  width: 10em;
-}
-
-.botao {
-  height: 2em;
-  width: 10em;
-  background-color: #df5b3c;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/*-------------------------------------------PROJETOS/START-------------------------------------------*/
-
-.projetoLayout1 {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-
-  background-color: rgba(0, 58, 154, 0.7);
-  color: #fff;
-  padding: 20px;
-  margin: 10px 0px 10px;
-  border-radius: 5px;
-}
-
-.projetoLayout1Upper {
-  display: flex;
-  margin: 0px;
-  gap: 20px;
-}
-
-.projetoLayout1Lower {
-  display: flex;
-  margin: 0px;
-}
-
-.projetoLayout1Titulo {
-  align-self: center;
-  justify-self: center;
-  margin: 0px;
-}
-
-.projetoLayout1Texto1 {
-  font-size: 1.5em;
-  margin: 0px;
-  text-align: justify;
-}
-
-.projetoLayout1Texto2 {
-  font-size: 1.5em;
-  margin: 0px;
-  text-align: justify;
-}
-
-.projetoLayout1Image {
-  width: 25%;
-  max-width: 200px;
-  padding: 5px;
-  border-radius: 20px;
-  margin: 0px 20px;
-  
-
-}
-
-@media (max-width: 980px) {
-  .projetoLayout1Upper {
-    flex-wrap: wrap;
-  }
-  
-  .projetoLayout1Lower {
-    flex-wrap: wrap;
-  }
-
-  .projetoLayout2Lower {
-    flex-wrap: wrap;
-  }
-}
-
-.projetoLayout2 {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-
-  background-color: rgb(2, 151, 94, 0.7);
-  padding: 20px;
-  margin: 10px 0px 10px;
-  border-radius: 5px;
-}
-
-.projetoLayout2Upper {
-  align-self: self-start;
-}
-
-.projetoLayout2Titulo {
-  margin: 0px;
-  margin-bottom: 20px;
-}
-
-.projetoLayout2Lower {
-  display: flex;
-  margin: 0px;
-}
-
-.projetoLayout2Texto {
-  margin: 0px;
-  padding: 0px;
-  font-size: 1.5em;
-  text-align: justify;
-}
-
-.projetoLayout2Image {
-  width: 15%;
-  height: 100%;
-  margin: 0px;
-  max-width: 200px;
-  min-width: 200px;
-  padding: 5px;
-  border-radius: 20px;
-  margin: 0px 20px;
-}
-
-/*-------------------------------------------PROJETOS/END-------------------------------------------*/
-/*-------------------------------------------PROJETO-PODCAST/START-------------------------------------------*/
-
-.episode {
-  width: 90%;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  background-color: rgba(10, 0, 154, 0.644);
-  font-size: 1.2em;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.mostrarMaisBtnPodcast {
-  border-radius: 20px;
-  border: 0px;
-  padding: 5px;
-  margin: 0px 5px;
-  cursor: pointer;
-  background-color: rgb(207, 207, 207);
-}
-
-.episodioIframe {
-  display: none;
-  align-self: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 50px;
-  margin: 10px;
-  aspect-ratio: 16 / 9;
-}
-
-.mostrarEpBtnPodcast {
-  border-radius: 10px;
-  border: 0px;
-  padding: 10px;
-  margin: 5px;
-  width: 15%;
-  cursor: pointer;
-  background-color: #2162ee;
-  font-weight: bold;
-  align-self: center;
-}
-
-/*-------------------------------------------PROJETO-PODCAST/END-------------------------------------------*/

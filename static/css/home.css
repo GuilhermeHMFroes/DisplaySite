@@ -1,0 +1,71 @@
+h1 {
+    text-align: left;
+}
+
+section {
+    margin-top: 5em;
+    margin: 5em;
+    height: fit-content;
+}
+
+section p {
+    margin: 15px;
+    text-align: left;
+    font-size: x-large;
+}
+
+section h1 {
+    font-size: 5em;
+}
+
+#baixaveis {
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+.baixavel {
+    text-align: left;
+    height: fit-content;
+    width: 15vw;
+    padding: 1.4em;
+    padding: 1.2em;
+    border-radius: 2em;
+}
+
+.baixavel ul {
+    display: block;
+    margin: 0;    }
+
+.baixavel li {
+    margin-left: 0;
+    margin: 5px;
+    padding-left: 0;
+    width: 100%;
+    text-align: justify;
+}
+
+.baixavel a {
+    margin: 0;
+    padding: 0;
+}
+
+#bate-papo-home {
+    background-color: rgba(0, 229, 142, 0.3);
+}
+
+#biblioteca {
+    background-color: rgba(0, 229, 142, 0.5);
+}
+
+#games {
+    background-color: rgba(0, 229, 142, 0.9);
+}
+
+#text-1 {
+    font-size: larger;
+    height: fit-content;
+    width: 60vw;
+    margin: 0;
+}

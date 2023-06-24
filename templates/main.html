@@ -12,6 +12,8 @@
     <link rel="icon" type="image/x-icon" href="/static/images/logo/logo.png">
     <title>Display</title>
 
+    {% block head %}
+    {% endblock %}
 </head>
 
 <body>
@@ -79,27 +81,8 @@
         <h4>&copy; DISPLAY LAB - 2023</h4>
     </footer>
 
-    <style>
-        #redes-sociais {
-            margin: 1.6em;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;
-            gap: 10em;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-    </style>
-
-    <script>
-
-    </script>
-
+    {% block script %}
+    {% endblock %}
 </body>
 
 </html>

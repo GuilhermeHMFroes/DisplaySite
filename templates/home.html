@@ -1,21 +1,20 @@
 {% extends "main.html" %}
 
+{% block head %}
+
+<link rel="stylesheet" href="../static/css/home.css">
+
+{% endblock %}
+
 {% block content %}
 
-<script>
-    document.getElementById('home').style.backgroundColor = '#009A60'
-    document.getElementById('home').style.color = '#fff'
-    document.getElementsByClassName('container')[0].style.backgroundColor = 'rgba(0, 154, 96, 0.1)'
-
-    document.querySelector(":root").style.setProperty("--footBorderColor", "#009A60")
-</script>
 <!-- ordenar por índice do conteúdo recebido no app.py -->
 
 
 
 <!-- FIM DO CARROSSEL / INÍCIO DO CAMPO DE TEXTO  -->
 
-<section>
+<section id="apresentacao">
     
     <h1>Uma breve apresentação</h1>
     
@@ -84,7 +83,7 @@
         <h1>Biblioteca</h1>
         
         <ul>
-            <li>pdf 1</li>
+            <li>EducaRedes: Jogo Digital Educacional como Ferramenta de Auxílio no Ensino da Arquitetura TCP/IP</li>
             <li>pdf 2</li>
             <li>pdf 3</li>
             <li>pdf 4</li>
@@ -96,7 +95,9 @@
 
         <ul>
             <li>Indisciplina 2D</li>
-            <li></li>
+            <li>Exterminando Drogas</li>
+            <li>EducaRedes</li>
+            <li>Peruaçu Digital</li>
         </ul>
     </div>
 
@@ -120,72 +121,10 @@
     
 </section>
 
-<style>
-    h1 {
-        text-align: left;
-    }
+{% endblock %}
 
-    section {
-        margin-top: 5em;
-        margin: 5em;
-        height: fit-content;
-    }
+{% block script %}
 
-    section p {
-        margin: 15px;
-        text-align: left;
-        font-size: x-large;
-    }
-
-    section h1 {
-        font-size: 5em;
-    }
-
-    #baixaveis {
-        margin: 2em;
-        display: flex;
-        flex-direction: row;
-        gap: 4em;
-    }
-
-    .baixavel {
-        text-align: left;
-        height: fit-content;
-        width: 15vw;
-        padding: 1.4em;
-        padding: 1.2em;
-        border-radius: 2em;
-    }
-    
-    .baixavel ul {
-        display: block;
-        margin: 0;    }
-
-    .baixavel li {
-        margin-left: 0;
-        margin: 5px;
-        padding-left: 0;
-    }
-
-    #bate-papo-home {
-        background-color: rgba(0, 229, 142, 0.3);
-    }
-
-    #biblioteca {
-        background-color: rgba(0, 229, 142, 0.5);
-    }
-
-    #games {
-        background-color: rgba(0, 229, 142, 0.9);
-    }
-
-    #text-1 {
-        font-size: larger;
-        height: fit-content;
-        width: 60vw;
-        margin: 0;
-    }
-
-</style>
+<script src="../static/js/home.js"></script>
 
 {% endblock %}

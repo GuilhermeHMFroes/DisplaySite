@@ -1,0 +1,41 @@
+.episode {
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(10, 0, 154, 0.644);
+    font-size: 1.2em;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mostrarMaisBtnPodcast {
+    border-radius: 20px;
+    border: 0px;
+    padding: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+  }
+  
+  .episodioIframe {
+    display: none;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px;
+    margin: 10px;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .mostrarEpBtnPodcast {
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px;
+    margin: 5px;
+    width: 15%;
+    cursor: pointer;
+    background-color: #2162ee;
+    font-weight: bold;
+    align-self: center;
+  }

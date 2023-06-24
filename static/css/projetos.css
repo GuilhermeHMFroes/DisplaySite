@@ -1,6 +1,7 @@
 .carrossel {
-    height: 42vh;
+    /*height: 42vh;*/
     width: 80vw;
+    aspect-ratio: 84 / 25;
     background-color: #fff;
     margin: 2em;
 }
@@ -15,13 +16,14 @@
     height: 100%;
     --transitionTime: 350ms;
     transition-duration: var(--transitionTime);
+    position: absolute;
 }
 
 .carrosselBtns {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: 85%;
+
     display: flex;
     align-items: end; 
     justify-content: center;

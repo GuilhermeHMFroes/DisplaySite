@@ -7,7 +7,7 @@ document.querySelector(":root").style.setProperty("--footBorderColor", "#009A60"
 
 
 // Carrossel
-let carrosselArray = [["../static/images/projetos/carrosel/podcastBanner.png", "Podcast", "https://www.google.com"], ["../static/images/projetos/carrosel/exterminandoDrogasBanner.png", "Exterminando Drogas", "https://www.youtube.com"]];
+let carrosselArray = [["../static/images/projetos/carrosel/podcastBanner.png", "Podcast", "/projetos/podcast"], ["../static/images/projetos/carrosel/exterminandoDrogasBanner.png", "Exterminando Drogas", "https://www.youtube.com"]];
 let carrossel = document.querySelector(".carrossel");
 let carrosselLink = carrossel.childNodes[1];
 let carrosselImage = carrossel.childNodes[1].childNodes[1];

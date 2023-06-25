@@ -13,12 +13,14 @@ let carrosselLink = carrossel.childNodes[1];
 let carrosselImage = carrossel.childNodes[1].childNodes[1];
 
 let tempoDaAnimacao = parseFloat(getComputedStyle(carrosselImage).getPropertyValue("--transitionTime").replace("ms", ""));
+let tempoParaPassarProProximo = 5000;
 
 let countIndexCarrosel = 0;
 carrosselLink.href = carrosselArray[countIndexCarrosel][2];
 carrosselImage.alt = carrosselArray[countIndexCarrosel][1];
 carrosselImage.src = carrosselArray[countIndexCarrosel][0];
 
+let intervaloCarrossel = setInterval(carrosselProximaImagem, tempoParaPassarProProximo);
 
 carrosselArray.forEach((element, index) => {
     let newBtnCarrossel = document.createElement("button");
@@ -34,8 +36,9 @@ carrosselArray.forEach((element, index) => {
             countIndexCarrosel = index;
             destacarBtn(countIndexCarrosel);
             carrosselImage.style.height = "100%";
+            clearInterval(intervaloCarrossel);
+            intervaloCarrossel = setInterval(carrosselProximaImagem, tempoParaPassarProProximo);
         }, tempoDaAnimacao)
-        
     })
 
     carrossel.childNodes[3].appendChild(newBtnCarrossel);
@@ -45,7 +48,7 @@ carrosselArray.forEach((element, index) => {
 destacarBtn(countIndexCarrosel);
 
 
-setInterval(() => {
+function carrosselProximaImagem() {
     countIndexCarrosel++;
     if (countIndexCarrosel > (carrosselArray.length - 1)) {
         countIndexCarrosel = 0;
@@ -58,7 +61,7 @@ setInterval(() => {
         destacarBtn(countIndexCarrosel);
         carrosselImage.style.height = "100%";
     }, tempoDaAnimacao)
-}, 5000)
+}
 
 
 function destacarBtn(countIndexCarrosel){

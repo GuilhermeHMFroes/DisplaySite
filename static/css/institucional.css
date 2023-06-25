@@ -2,3 +2,9 @@
     padding: 3em;
     text-align: center;
 }
+
+#biografiaDisplay {
+    width: 95%;
+    font-size: 1.5em;
+    text-align: justify;
+}

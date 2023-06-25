@@ -1,8 +1,6 @@
 let sidebarLower = document.querySelector("#sidebar-lower");
 let iconeMenu = document.querySelector("#iconeMenu");
 
-console.log(window.innerWidth);
-
 let body = document.querySelector("body");
 
 function hideMenuWhenClicksOutside(event) {

@@ -1,3 +1,8 @@
+#tituloProjetosDoDisplay {
+    text-align: center;
+    font-size: 3em;
+}
+
 .carrossel {
     /*height: 42vh;*/
     width: 80vw;
@@ -38,12 +43,13 @@
 }
 
 .saiba-mais {
-    width: 10em;
+    --btnTamanho: 15em;
+    width: var(--btnTamanho);
 }
 
 .botao {
     height: 2em;
-    width: 10em;
+    width: var(--btnTamanho);
     background-color: #df5b3c;
     font-size: 1.2em;
     text-align: center;
@@ -114,6 +120,10 @@
 
     .projetoLayout2Lower {
         flex-wrap: wrap;
+    }
+    
+    .botao {
+        font-size: 2em;
     }
 }
 

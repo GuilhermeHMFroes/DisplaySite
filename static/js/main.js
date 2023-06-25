@@ -1,8 +1,6 @@
 let sidebarLower = document.querySelector("#sidebar-lower");
 let iconeMenu = document.querySelector("#iconeMenu");
 
-console.log(window.innerWidth);
-
 let body = document.querySelector("body");
 
 function hideMenuWhenClicksOutside(event) {
@@ -12,7 +10,7 @@ function hideMenuWhenClicksOutside(event) {
     }
 }
 
-body.onresize = () => {
+function menu() {
     if (window.innerWidth <= 980) {
         let siderbarLowerActive = 0;
         sidebarLower.style.display = "none";
@@ -32,4 +30,10 @@ body.onresize = () => {
         sidebarLower.style.display = "flex";
         document.removeEventListener("click", hideMenuWhenClicksOutside);
     }
+}
+
+menu();
+
+body.onresize = () => {
+    menu();
 }

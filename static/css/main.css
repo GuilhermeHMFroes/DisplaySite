@@ -41,11 +41,6 @@ verde: #009A60
     z-index: 999;
   }
 
-  #logoDisplayETituloDisplay > a > img {
-    width: 96px;
-    height: 96px;
-  }
-
   #logoDisplayETituloDisplay > a > p {
     font-size: 2em !important;
   }

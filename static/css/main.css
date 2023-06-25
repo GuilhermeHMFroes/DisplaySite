@@ -30,6 +30,65 @@ verde: #009A60
   padding: 5px;
 }
 
+
+
+@media (max-width: 980px) {
+  #sidebar-upper {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
+  }
+
+  #logoDisplayETituloDisplay > a > img {
+    width: 96px;
+    height: 96px;
+  }
+
+  #logoDisplayETituloDisplay > a > p {
+    font-size: 2em !important;
+  }
+
+  #sidebar-lower {
+    display: none;
+    font-size: 2em;
+    justify-content: end !important;
+    position: fixed !important;
+    width: fit-content !important;
+    align-self: self-end;
+    top: 50% !important;
+    transform: translate(0%, -50%);
+    z-index: 1000;
+    --tempoTransisaoSideBar: 500ms;
+    transition: var(--tempoTransisaoSideBar);
+    border: 0px !important;
+  }
+
+  #sidebar-lower > ul > a {
+    padding: 0px !important;
+  }
+
+  #sidebar-lower > ul {
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  #iconeMenu {
+    display: block !important;
+    width: 7vw;
+    cursor: pointer;
+  }
+
+  #iconeMenu > hr {
+    border: 5px solid black;
+  }
+}
+
+#iconeMenu {
+  display: none;
+}
+
 #sidebar-lower {
   position: sticky;
   position: -webkit-sticky;

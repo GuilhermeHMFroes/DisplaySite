@@ -21,12 +21,18 @@
     <!-- Menu/Sidebar -->
     <div id="sidebar-upper">
         <!-- {logo} Display -->
-        <div>
+        <div id="logoDisplayETituloDisplay">
             <a href="{{ url_for('home') }}" style="display: flex; flex-direction: row; align-items: center; color: #00879A;">
                 <img src="/static/images/logo/logobordabranca.png" alt="Home" height="48px" width="48px"
                     style="padding: 1.4em;">
                 <p style="font-size: 20px;">DISPLAY LAB</p>
             </a>
+        </div>
+
+        <div id="iconeMenu">
+            <hr>
+            <hr>
+            <hr>
         </div>
 
         <!-- {Login} -->
@@ -84,8 +90,10 @@
         </div>
     </footer>
 
+    <script src="../static/js/main.js"></script>
     {% block script %}
     {% endblock %}
+    
 </body>
 
 </html>

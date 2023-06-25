@@ -163,4 +163,6 @@ footer {
   padding: 20px;
 }
 
-
+#copyright > h4 {
+  margin: 0px;
+}

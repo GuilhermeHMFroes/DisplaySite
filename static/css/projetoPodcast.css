@@ -23,6 +23,9 @@
 
 #todosEpisodios {
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mostrarMaisBtnPodcast {

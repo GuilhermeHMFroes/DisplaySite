@@ -21,3 +21,7 @@ def projetos():
 @app.route('/projetos/podcast')
 def projetoPodcast():
     return render_template('projetoPodcast.html')
+
+@app.route('/projetos/exterminando_drogas')
+def projetoExterminandoDrogas():
+    return render_template('projetoExterminandoDrogas.html')

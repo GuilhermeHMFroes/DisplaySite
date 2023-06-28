@@ -24,7 +24,8 @@ let intervaloCarrossel = setInterval(carrosselProximaImagem, tempoParaPassarProP
 
 carrosselArray.forEach((element, index) => {
     let newBtnCarrossel = document.createElement("button");
-    newBtnCarrossel.innerText = (index + 1).toString();
+    newBtnCarrossel.innerText = "O";
+    newBtnCarrossel.style.color = "transparent";
 
     newBtnCarrossel.addEventListener("click", () => {
         carrosselImage.style.height = "0%";

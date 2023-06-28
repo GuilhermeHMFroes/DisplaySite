@@ -23,59 +23,50 @@
 <h1 id="tituloProjetosDoDisplay">Os Projetos Do Display</h1>
 
 <!-- Podcast -->
-<div class="projetoLayout1">
-    <div class="projetoLayout1Upper">
-        <h1 class="projetoLayout1Titulo">DISPLAYCAST</h1>
-        <p class="projetoLayout1Texto1">Um podcast fascinante que mergulha no mundo da tecnologia e carreira! Junte-se a nós enquanto exploramos os últimos avanços tecnológicos, compartilhamos insights valiosos sobre desenvolvimento profissional e mergulhamos em discussões instigantes com especialistas da indústria.</p>
-    </div>
-    <br>
-    <div class="projetoLayout1Lower">
-        <p class="projetoLayout1Texto2">Se você é um entusiasta de tecnologia em busca de conhecimento, um profissional em transição de carreira ou alguém que busca conselhos valiosos para se destacar na indústria, esse o DisplayCast é perfeito para você. Aperte o play e embarque nesta jornada emocionante com a gente. Vamos explorar o mundo da tecnologia e descobrir os segredos para o sucesso profissional juntos!</p>
-        <img src="../static/images/projetos/lowpolyPodcast.png" alt="podcastImage" class="projetoLayout1Image">
-    </div>
-    <br>
-    <a href="{{ url_for('projetoPodcast') }}" class="saiba-mais">
-        <div class="botao">
-            SAIBA MAIS
+<div id="layoutsDeProjetos">
+    <div class="projetoLayout1">
+        <div class="projetoLayout1Upper">
+            <h1 class="projetoLayout1Titulo">DISPLAYCAST</h1>
+            <p class="projetoLayout1Texto1">Um podcast fascinante que mergulha no mundo da tecnologia e carreira! Junte-se a nós enquanto exploramos os últimos avanços tecnológicos, compartilhamos insights valiosos sobre desenvolvimento profissional e mergulhamos em discussões instigantes com especialistas da indústria.</p>
         </div>
-    </a>
-</div>
-
-
-
-<!-- Bate-papo -->
-<!-- Jogos -->
-
-<div class="projetoLayout2">
-    <div class="projetoLayout2Upper">
-        <h1 class="projetoLayout2Titulo">Exterminando Drogas (GAME)</h1>
-    </div>
-    <div class="projetoLayout2Lower">
-        <p class="projetoLayout2Texto">"Exterminando Drogas" é um emocionante jogo educacional em 2D que busca conscientizar os jogadores sobre os perigos das drogas. Com gráficos desenhados à mão, o jogo transporta os jogadores para duas ilhas misteriosas, onde vivem dois corajosos irmãos. Infelizmente, sua amada irmã foi capturada por uma gangue de traficantes.
-            Determinados a resgatar sua irmã e combater o mal que assola as ilhas, os dois irmãos embarcam em uma jornada cheia de desafios e perigos. Nessa aventura de plataforma, eles devem superar obstáculos e enfrentar inimigos!</p>
-        <img src="../static/images/projetos/exterminandoDrogas2.png" alt="logo" class="projetoLayout2Image">
-    </div>
-    <br>
-    <a href="#" class="saiba-mais">
-        <div class="botao">
-            SAIBA MAIS
+        <br>
+        <div class="projetoLayout1Lower">
+            <p class="projetoLayout1Texto2">Se você é um entusiasta de tecnologia em busca de conhecimento, um profissional em transição de carreira ou alguém que busca conselhos valiosos para se destacar na indústria, esse o DisplayCast é perfeito para você. Aperte o play e embarque nesta jornada emocionante com a gente. Vamos explorar o mundo da tecnologia e descobrir os segredos para o sucesso profissional juntos!</p>
+            <img src="../static/images/projetos/lowpolyPodcast.png" alt="podcastImage" class="projetoLayout1Image">
         </div>
-    </a>
+        <br>
+        <a href="{{ url_for('projetoPodcast') }}" class="saiba-mais">
+            <div class="botao">
+                SAIBA MAIS
+            </div>
+        </a>
+    </div>
+    
+    
+    
+    <!-- Bate-papo -->
+    <!-- Jogos -->
+    
+    <div class="projetoLayout2">
+        <div class="projetoLayout2Upper">
+            <h1 class="projetoLayout2Titulo">Exterminando Drogas (GAME)</h1>
+        </div>
+        <div class="projetoLayout2Lower">
+            <p class="projetoLayout2Texto">"Exterminando Drogas" é um emocionante jogo educacional em 2D que busca conscientizar os jogadores sobre os perigos das drogas. Com gráficos desenhados à mão, o jogo transporta os jogadores para duas ilhas misteriosas, onde vivem dois corajosos irmãos. Infelizmente, sua amada irmã foi capturada por uma gangue de traficantes.
+                Determinados a resgatar sua irmã e combater o mal que assola as ilhas, os dois irmãos embarcam em uma jornada cheia de desafios e perigos. Nessa aventura de plataforma, eles devem superar obstáculos e enfrentar inimigos!</p>
+            <img src="../static/images/projetos/exterminandoDrogas2.png" alt="logo" class="projetoLayout2Image">
+        </div>
+        <br>
+        <a href="{{ url_for('projetoExterminandoDrogas') }}" class="saiba-mais">
+            <div class="botao">
+                SAIBA MAIS
+            </div>
+        </a>
+    </div>
+    
+    <!-- Comunicação -->
+    <!--  -->    
 </div>
-
-<!-- Comunicação -->
-<!--  -->
-
-<section id="project-details" style="display: none;">
-    <h1>Sobre o projeto</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Facere cupiditate sequi commodi reiciendis
-        vitae voluptatem suscipit illo veritatis dicta,
-        quaerat ipsum possimus officia repellendus deserunt
-        pariatur. Voluptas eos et aut!
-    </p>
-</section>
 
 {% endblock %}
 
